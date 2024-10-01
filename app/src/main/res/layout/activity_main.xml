@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="80sp"
+        android:textColor="@color/textWhite"
+        android:text="0"
+        android:padding="32dp"
+        android:background="@color/background"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <!-- First Row -->
+        <Button android:id="@+id/buttonAC" style="@style/ButtonLightGrey" android:text="AC"/>
+        <Button android:id="@+id/buttonSignChange" style="@style/ButtonLightGrey" android:text="-/+"/>
+        <Button android:id="@+id/buttonPercent" style="@style/ButtonLightGrey" android:text="%"/>
+        <Button android:id="@+id/buttonDivide" style="@style/ButtonBrightOrange" android:text="÷"/>
+
+        <!-- Second Row -->
+        <Button android:id="@+id/button7" style="@style/ButtonDarkGrey" android:text="7"/>
+        <Button android:id="@+id/button8" style="@style/ButtonDarkGrey" android:text="8"/>
+        <Button android:id="@+id/button9" style="@style/ButtonDarkGrey" android:text="9"/>
+        <Button android:id="@+id/buttonMultiply" style="@style/ButtonBrightOrange" android:text="×"/>
+
+        <!-- Third Row -->
+        <Button android:id="@+id/button4" style="@style/ButtonDarkGrey" android:text="4"/>
+        <Button android:id="@+id/button5" style="@style/ButtonDarkGrey" android:text="5"/>
+        <Button android:id="@+id/button6" style="@style/ButtonDarkGrey" android:text="6"/>
+        <Button android:id="@+id/buttonSubtract" style="@style/ButtonBrightOrange" android:text="-"/>
+
+        <!-- Fourth Row -->
+        <Button android:id="@+id/button1" style="@style/ButtonDarkGrey" android:text="1"/>
+        <Button android:id="@+id/button2" style="@style/ButtonDarkGrey" android:text="2"/>
+        <Button android:id="@+id/button3" style="@style/ButtonDarkGrey" android:text="3"/>
+        <Button android:id="@+id/buttonAdd" style="@style/ButtonBrightOrange" android:text="+"/>
+
+        <!-- Fifth Row -->
+        <Button android:id="@+id/button0" style="@style/ButtonDarkGrey" android:layout_columnSpan="2" android:text="0"
+            android:background="@drawable/capsule_button"/>
+        <Button android:id="@+id/buttonDecimal" style="@style/ButtonDarkGrey" android:text="."/>
+        <Button android:id="@+id/buttonEquals" style="@style/ButtonBrightOrange" android:text="="/>
+
+    </GridLayout>
+
+</LinearLayout>
